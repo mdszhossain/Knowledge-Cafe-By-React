@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 
 export default function App() {
   const [bookmarks, setBookmarks] = useState([]);
+  const [readTime, setReadTime] = useState(0);
 
   const handleAddBookmark = (blog) => {
     const newBookmarks = [...bookmarks, blog];
@@ -13,6 +14,9 @@ export default function App() {
   };
 
   const handleMarkAsRead = (id, blog) => {
+    const { readingTime } = blog;
+    const newReadingTime = readingTime + readTime;
+    setReadTime(newReadingTime);
     const remainingBookmarks = bookmarks.filter(
       (bookmark) => bookmark.id !== id,
     );
@@ -27,7 +31,7 @@ export default function App() {
           handleAddBookmark={handleAddBookmark}
           handleMarkAsRead={handleMarkAsRead}
         />
-        <Bookmarks bookmarks={bookmarks} />
+        <Bookmarks bookmarks={bookmarks} readTime={readTime} />
       </div>
     </div>
   );
