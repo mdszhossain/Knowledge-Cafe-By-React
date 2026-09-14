@@ -1,1 +1,1 @@
-live url: https://www.knowledge-cafe-react-mdszhossain.surge.sh
+live url: https://knowledge-cafe-react-mdszhossain.surge.sh
