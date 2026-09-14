@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Blog from "../Blog/Blog";
 
-export default function Blogs({handleAddBookmark}) {
+export default function Blogs({ handleAddBookmark, handleMarkAsRead }) {
   const [blogs, setBlogs] = useState([]);
 
   // fetching all blogs data from blogs.json file
@@ -14,7 +14,12 @@ export default function Blogs({handleAddBookmark}) {
   return (
     <div className="w-2/3">
       {blogs.map((blog, idx) => (
-        <Blog key={idx} blog={blog} handleAddBookmark={handleAddBookmark} />
+        <Blog
+          key={idx}
+          blog={blog}
+          handleAddBookmark={handleAddBookmark}
+          handleMarkAsRead={handleMarkAsRead}
+        />
       ))}
     </div>
   );

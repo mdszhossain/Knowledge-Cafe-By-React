@@ -12,11 +12,21 @@ export default function App() {
     setBookmarks(newBookmarks);
   };
 
+  const handleMarkAsRead = (id, blog) => {
+    const remainingBookmarks = bookmarks.filter(
+      (bookmark) => bookmark.id !== id,
+    );
+    setBookmarks(remainingBookmarks);
+  };
+
   return (
     <div className="max-w-7xl mx-auto">
       <Header />
       <div className="flex">
-        <Blogs handleAddBookmark={handleAddBookmark} />
+        <Blogs
+          handleAddBookmark={handleAddBookmark}
+          handleMarkAsRead={handleMarkAsRead}
+        />
         <Bookmarks bookmarks={bookmarks} />
       </div>
     </div>

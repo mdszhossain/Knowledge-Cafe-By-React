@@ -1,5 +1,5 @@
 import { GoBookmark } from "react-icons/go";
-export default function Blog({ blog, handleAddBookmark }) {
+export default function Blog({ blog, handleAddBookmark, handleMarkAsRead }) {
   const {
     id,
     title,
@@ -30,7 +30,7 @@ export default function Blog({ blog, handleAddBookmark }) {
         hashtags.map((hashtag, idx) => <span key={idx}>#{hashtag} &nbsp;&nbsp;&nbsp;&nbsp;</span>)
       }
       <div className="my-5">
-        <button className="bg-red-500 p-2 text-white rounded-xl">Mark as read</button>
+        <button onClick={()=>{handleMarkAsRead(id, blog)}} className="bg-red-500 p-2 text-white rounded-xl">Mark as read</button>
       </div>
     </div>
   );
