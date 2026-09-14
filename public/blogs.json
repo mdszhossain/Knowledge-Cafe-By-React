@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "The Future of Web Development",
+    "coverPhoto": "../src/assets/images/1.jpg",
+    "authorPhoto": "../src/assets/images/boy1.png",
+    "authorName": "John Carter",
+    "postedDate": "2026-09-10",
+    "readingTime": 5,
+    "hashtags": ["webdevelopment", "javascript", "technology"]
+  },
+  {
+    "id": 2,
+    "title": "Getting Started with React",
+    "coverPhoto": "../src/assets/images/2.png",
+    "authorPhoto": "../src/assets/images/boy2.png",
+    "authorName": "Sarah Wilson",
+    "postedDate": "2026-09-08",
+    "readingTime": 7,
+    "hashtags": ["react", "frontend", "programming"]
+  },
+  {
+    "id": 3,
+    "title": "Building Better User Experiences",
+    "coverPhoto": "../src/assets/images/3.png",
+    "authorPhoto": "../src/assets/images/girl1.jpg",
+    "authorName": "Michael Brown",
+    "postedDate": "2026-09-05",
+    "readingTime": 6,
+    "hashtags": ["ux", "design", "ui"]
+  },
+  {
+    "id": 4,
+    "title": "A Beginner's Guide to Node.js",
+    "coverPhoto": "../src/assets/images/4.jpg",
+    "authorPhoto": "../src/assets/images/girl2.jpg",
+    "authorName": "Emily Davis",
+    "postedDate": "2026-09-02",
+    "readingTime": 8,
+    "hashtags": ["nodejs", "backend", "javascript"]
+  }
+]
